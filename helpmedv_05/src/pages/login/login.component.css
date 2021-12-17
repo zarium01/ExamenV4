@@ -1,0 +1,7 @@
+.completa{
+    height: 100%;
+    background-image: url("src\assets\img\Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

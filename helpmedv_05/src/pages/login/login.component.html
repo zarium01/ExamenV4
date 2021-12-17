@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true">
+    <ion-grid class="completa">
+        <ion-row class="completa ion-align-items-center">
+            <ion-col size="10" offset="1">
+                <ion-card>
+                    <ion-card-header>
+                        <img src="assets/img/Logo.png" height=100px width=100px>
+                        <ion-card-title class="ion-text-center">
+                            Inicio Sesion
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Usuario</ion-label>
+                                        <ion-input [(ngModel)]="usuario" type="text" name="usuario"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Contraseña</ion-label>
+                                        <ion-input [(ngModel)]="contrasena" type="password" name="contrasena"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button (click)="iniciarSesion()" expand="block">
+                                        Iniciar sesión
+                                      </ion-button>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="10" offset="1" class="ion-text-center">
+                                    <ion-router-link href="registro">
+                                        ¿No tienes cuenta? Registrate aquí.
+                                    </ion-router-link>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button expand="block" href="menu-principal" >Iniciar sesion como invitado</ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

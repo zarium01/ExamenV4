@@ -1,0 +1,101 @@
+<ion-content [fullscreen]="true">
+    <ion-grid class="completo">
+        <ion-row class="completo ion-align-items-center">
+            <ion-col size="10" offset="1">
+                <ion-card>
+                    <ion-card-header>
+                        <img src="assets/img/Logo.png" height=60px >
+                        <ion-card-title class="ion-text-center">
+                            Registro
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Nombre
+                                        </ion-label>
+                                        <ion-input [(ngModel)]="persona.nombre" required></ion-input> 
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Apellido
+                                        </ion-label>
+                                        <ion-input [(ngModel)]="persona.apellido" type="text" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Usuario
+                                        </ion-label>
+                                        <ion-input [(ngModel)]="persona.usuario" type="text" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Contraseña
+                                        </ion-label>
+                                        <ion-input [(ngModel)]="persona.contrasena" type="password" required></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Fecha de nacimiento
+                                        </ion-label>
+                                        <ion-datetime 
+                                            displayFormat="DD/MM/YYYY"
+                                            [(ngModel)]="persona.fechaNacimiento" type="number" >
+                                        </ion-datetime>  
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>  
+                            
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button expand="block" (click)="agregarPersona()" href="">
+                                        Registar
+                                    </ion-button>
+                                    <ion-button href="notas" expand="block" size="" href="">
+                                        Volver
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col class="ion-text-center">
+                                    <ion-router-link href="">
+                                        ¿Ya tienes cuenta?
+                                    </ion-router-link>
+                                </ion-col>
+                            </ion-row>
+
+
+
+                        </ion-grid>      
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

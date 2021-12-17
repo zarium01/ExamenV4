@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-toolbar>
+
+        <img src="assets/img/Logo.png" height=100px width=100px>
+
+        <ion-title class="ion-text-center">
+            <font size="15">Mapa</font>
+        </ion-title>
+
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-grid class="completo">
+        <ion-row class="completo ion-align-items-center">
+            <ion-grid>
+                <ion-row>
+                  <ion-col >
+                    <google-map width="100%" higth="95vh%" [center]="position">
+                        <map-marker
+                        [position]="position"
+                        [label]="label"
+                        [tittle]="tittle">
+                        </map-marker>
+                    </google-map>
+                    <ion-button href="notas" color="danger" expand="" size="" href="menu-principal">
+                        Volver
+                    </ion-button>
+                    <ion-button href="notas" color="danger" expand="" size="" href="menu-principal">
+                        Aceptar
+                    </ion-button>
+
+
+
+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+
+
+
+
+        </ion-row>
+    </ion-grid>
+</ion-content>

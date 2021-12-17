@@ -1,0 +1,12 @@
+{
+  "usuario": [
+    {
+      "nombre": "Anthony ",
+      "apellido": "Perkins",
+      "contrasena": "HOLA123",
+      "fechaNacimiento": "2000-06-21",
+      "usuario": "Zarium",
+      "id": 1
+    }
+  ]
+}
